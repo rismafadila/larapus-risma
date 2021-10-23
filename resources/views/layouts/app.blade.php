@@ -78,6 +78,13 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        <footer class="fixed-bottom">
+<center>
+    Risma Septiani Fadila
+    - {{ date('Y') }}
+</center>
+        </footer>
     </div>
 </body>
 </html>
