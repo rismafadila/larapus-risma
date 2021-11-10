@@ -26,7 +26,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // });
 
 //admin route
-Route::group(['prefix'=>'admin','middleware' => ['auth']], function () {
+Route::group(['prefix'=>'admin','middleware' => ['auth','role:admin']], function () {
     Route::get('/', function(){
         return view('admin.index');
     });
